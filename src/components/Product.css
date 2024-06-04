@@ -1,0 +1,112 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  font-family: 'Work Sans', sans-serif;
+} */
+.subcont1 img{
+    width: 15rem;
+}
+.subcont1{
+    margin-top: 5rem;
+    width: 50%;
+    justify-content: center;
+}
+.subcont2{
+    margin-top: 8rem;
+    width: 50%;
+}
+.price{
+    margin-top: 1.5rem;
+    text-align: left;
+}
+.rate{
+    text-align: left;
+}
+.des{
+    text-align: left;
+}
+.about{
+    text-align: left;
+    color:#5b5b5b;
+}
+.cont1{
+    display: flex;
+
+}
+.ssubcont{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.ssubcont .but{
+    background-color: #fefaca;
+    width: 9rem;
+    border-radius: 3rem;
+    height: 3.5rem;
+}
+.ssubcont .but:hover{
+    background-color: #fcf281;
+}
+.endbut{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: flex-start;
+}
+.endbut .but{
+    width: 6rem;
+}
+@media only screen and (max-width: 767px) {
+    .subcont1 img{
+        width: 15rem;
+    }
+    .subcont1{
+        margin-top: 5rem;
+        display: flex;
+        margin: auto;
+        width: 100%;
+    }
+    .subcont2{
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .price{
+        margin-top: 1.5rem;
+        text-align: left;
+    }
+    .rate{
+        text-align: left;
+    }
+    .des{
+        text-align: left;
+    }
+    .about{
+        text-align: left;
+        color:#5b5b5b;
+    }
+    .cont1{
+        display:block;
+    
+    }
+    .ssubcont{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .ssubcont .but{
+        background-color: #fefaca;
+        width: 12rem;
+        border-radius: 3rem;
+        height: 3.3rem;
+    }
+    .ssubcont .but:hover{
+        background-color: #fcf281;
+    }
+    .endbut{
+        display: flex;
+        margin-bottom: 2rem;
+        justify-content: flex-start;
+    }
+    .endbut .but{
+        width: 6rem;
+        height: 3.3rem;
+    }
+  }

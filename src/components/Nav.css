@@ -1,0 +1,23 @@
+.maincont img{
+    width: 3.5rem;
+}
+.navbar{
+    background-color: 	#ffffeb;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.navtitle{
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+.navtitle .link{
+    text-decoration: none;
+    color: black;
+}
+@media only screen and (max-width: 768px) {
+    .navtitle{
+        font-size: 1.6rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+  }
