@@ -1,0 +1,20 @@
+.product{
+    height: 28rem;
+    margin-bottom: 2rem;
+    text-decoration-color: fcf281;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.titlecov{
+    height: 12rem;
+}
+.product img{
+    padding: 2rem;
+    height: 10rem;
+}
+.eachprod Link{
+    text-decoration: none;
+}
+.eachprod .card:hover{
+    border-color: #fcf281;
+    color: #f1c232;
+}

@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import './App.css';
-
+import Root from './components/Root.js'
+import Home from './components/Home.js'
+import Product from './components/Product.js'
+import Error from './components/Error';
+import {useState,useEffect} from 'react';
 function App() {
+  let [prod,setProd]=useState([]);
+    useEffect(()=>{
+        fetch('https://fakestoreapi.com/products')
+        .then(res=>res.json())
+        .then(p=>setProd(p))
+    },[]);
+  let router = createBrowserRouter([
+    {
+    path:'',
+    element:<Root/>,
+    errorElement:<Error/>,
+    children :[
+      {
+        path:'',
+        element:<Home pro={prod}/>
+      },
+      {
+        path:'product/:id',
+        element:<Product/>
+      }
+    ]
+    }
+  ])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RouterProvider router = {router}/>
     </div>
   );
 }
